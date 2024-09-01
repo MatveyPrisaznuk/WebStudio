@@ -1,11 +1,10 @@
 :root {
-    --white-color: #FFFFFF;
-    --blue-color: #2196F3;
-    --black-color: #212121;
-    --darkgrey-color: #2F303A;
-    --lightgrey-color: #F5F4FA;
-    --middlegrey-color: #757575;
-    --lightgreyfooter-color:  rgba(255, 255, 255, 0.60);;
+    --main-color: #FFFFFF;
+    --text-color: #212121;
+    --main-color2: #2F303A;
+    --section-color: #F5F4FA;
+    --button-color: #757575;
+    --footertext-color:  rgba(255, 255, 255, 0.60);;
   
   
   }
