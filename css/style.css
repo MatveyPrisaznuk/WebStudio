@@ -1,10 +1,13 @@
 :root {
+    --logo-color: #000;
+    --akcent-color: #2196F3;
     --main-color: #FFFFFF;
     --text-color: #212121;
-    --main-color2: #2F303A;
-    --section-color: #F5F4FA;
-    --button-color: #757575;
+    --footer-color: #2F303A;
+    --section-background: #F5F4FA;
+    --additional-color: #757575;
     --footertext-color:  rgba(255, 255, 255, 0.60);;
-  
-  
+    --line-color: #ECECEC;
+    --border-card: #EEEEEE;
+    ;
   }
