@@ -11,3 +11,7 @@
     --border-card: #EEEEEE;
     ;
   }
+
+  body {
+    font-family: "Roboto"
+   };
