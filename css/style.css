@@ -18,11 +18,19 @@ body {
 
 
   .nav-studio {
-  color: #2196F3;
+  color: #212121;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.142857143;
   letter-spacing: 0.28px;
+  }
+
+  .nav-studio:hover {
+    color: #2196F3;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.142857143;
+    letter-spacing: 0.28px;
   }
 
   .nav-portfolio {
@@ -42,12 +50,20 @@ body {
   }
 
   .header-gmail {
-  color: #2196F3;
+  color: #212121;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.142857143;
   letter-spacing: 0.28px;
   }
+
+  .header-gmail:hover {
+    color: #2196F3;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.142857143;
+    letter-spacing: 0.28px;
+    }
 
   .header-phone {
     color: #757575;
@@ -129,7 +145,7 @@ body {
     letter-spacing: 0.48px;
   }
 
-  .logo_1stpart {
+  .header-logo {
     color: #2196F3;
     font-family: Raleway;
     font-size: 26px;
@@ -137,17 +153,7 @@ body {
     line-height: 1.384615385;
     letter-spacing: 0.78px;
   }
-
-  .footer-adress {
-    color: #000000;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.42px;
-  }
-
-  .logo_2ndpart {
+  .header-span {
     color: #000;
     font-family: Raleway;
     font-size: 26px;
@@ -156,8 +162,17 @@ body {
     letter-spacing: 0.78px;
   }
 
+  .footer-adress-link {
+    color: #000000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.714285714;
+    letter-spacing: 0.42px;
+  }
+
   .footer-gmail {
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.60);
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -166,10 +181,30 @@ body {
   }
 
   .footer-phone {
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.60);
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.714285714; 
     letter-spacing: 0.42px;
+ 
   }
+
+  .footer-logo {
+    color: #2196F3;
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.384615385;
+    letter-spacing: 0.78px;
+  }
+  .footer-span {
+    color: #000;
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.384615385;
+    letter-spacing: 0.78px;
+  }
+
+
