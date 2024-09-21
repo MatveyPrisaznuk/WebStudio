@@ -41,6 +41,14 @@ body {
   letter-spacing: 0.28px;
   }
 
+  .nav-portfolio:hover {
+    color: #2196F3;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.142857143;
+    letter-spacing: 0.28px;
+ }
+
   .nav-contacts {
   color: #212121;
   font-size: 14px;
