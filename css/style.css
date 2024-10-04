@@ -23,6 +23,10 @@
     font-family: "Roboto";
   }
 
+  .header {
+    padding-top: 24px;
+  }
+
   .header-logo {
     color: var(--akcent-color);
     font-family: Raleway;
@@ -114,6 +118,8 @@
 
   .hero {
     background: var(--footer-color);
+    padding-top: 232px;
+    padding-bottom: 200px;
   }
 
   .hero-title {
@@ -138,6 +144,11 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   }
   
+  .section-main {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
   .section-title {
     color: var(--text-color);
     font-size: 14px;
@@ -155,6 +166,11 @@
     letter-spacing: 0.42px;
   }
 
+  .whatwedo {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
   .whatwedo-title {
     color: var(--text-color);
     text-align: center;
@@ -163,6 +179,12 @@
     line-height: 1.166666667;
     letter-spacing: 1.08px;
   }
+
+  .ourteam {
+    padding-top: 94px;
+    padding-bottom: 124px;
+  }
+  
 
   .ourteam-title {
     color: var(--text-color);
@@ -193,6 +215,8 @@
 
   .footer {
     background: var(--footer-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .footer-adress-link {
