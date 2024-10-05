@@ -181,7 +181,7 @@
   }
 
   .ourteam {
-    color: var(--additional-color);
+    background-color: var(--section-background);
     padding-bottom: 94px;
     padding-top: 94px;
   }
