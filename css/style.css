@@ -25,6 +25,7 @@
 
   .header {
     padding-top: 24px;
+    padding-bottom: 25px;
   }
 
   .header-logo {
@@ -118,7 +119,7 @@
 
   .hero {
     background: var(--footer-color);
-    padding-top: 232px;
+    padding-top: 200px;
     padding-bottom: 200px;
   }
 
@@ -167,7 +168,6 @@
   }
 
   .whatwedo {
-    padding-top: 94px;
     padding-bottom: 94px;
   }
 
@@ -181,8 +181,7 @@
   }
 
   .ourteam {
-    padding-top: 94px;
-    padding-bottom: 124px;
+    padding-bottom: 94px;
   }
   
 
