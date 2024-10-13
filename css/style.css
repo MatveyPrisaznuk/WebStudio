@@ -321,6 +321,10 @@
     margin-top: 9px;
   }
 
-  .footer-list:first-child {
+  .footer-item {
     margin-bottom: 9px;
+  }
+
+  .footer-item:nth-child(2) {
+    margin-bottom: 0px;
   }
