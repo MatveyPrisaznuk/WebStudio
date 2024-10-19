@@ -164,6 +164,7 @@
     background: var(--akcent-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 10px 32px;
+    border: none;
   }
   
   .section-main {
@@ -250,7 +251,7 @@
     font-weight: 400;
     line-height: 1.1875;
     letter-spacing: 0.48px;
-    padding-top: 10px;
+    margin-top: 10px;
   }
   .ourteam-list {
     display: flex;
