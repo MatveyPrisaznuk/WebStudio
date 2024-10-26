@@ -63,6 +63,13 @@
    background: #FFF;
  }
 
+ .main-img {
+   width: 100%;
+ }
+
+ .main-item {
+   flex-basis: calc((100% - 60px) /3);
+ }
  .button-box {
    justify-content: center;
    display: flex;
