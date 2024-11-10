@@ -64,7 +64,17 @@
     letter-spacing: 0.28px;
   }
 
-  .nav-studio:hover {
+  .active-page {
+    color: var(--akcent-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.142857143;
+    letter-spacing: 0.28px;
+
+  }
+
+  .nav-studio:hover,
+  .nav-studio:focus {
     color: var(--akcent-color);
     font-size: 14px;
     font-weight: 500;
@@ -85,7 +95,8 @@
     gap: 50px;
   }
 
-  .nav-portfolio:hover {
+  .nav-portfolio:hover,
+  .nav-portfolio:focus {
     color: var(--akcent-color);
     font-size: 14px;
     font-weight: 500;
@@ -109,7 +120,8 @@
   letter-spacing: 0.28px;
   }
 
-  .header-gmail:hover {
+  .header-gmail:hover,
+  .header-gmail:focus {
     color: var(--akcent-color);
     font-size: 14px;
     font-weight: 500;
@@ -125,7 +137,8 @@
     letter-spacing: 0.28px;
   }
 
-  .header-phone:hover {
+  .header-phone:hover,
+  .header-phone:focus {
     color: var(--akcent-color);
     font-size: 14px;
     font-weight: 500;
