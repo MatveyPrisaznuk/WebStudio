@@ -32,9 +32,10 @@
     display: flex;
     align-items: center;
   }
+
   .header-list {
     display: flex;
-    gap: 50px;
+    gap: 30px;
     margin-left: auto;
   }
 
@@ -47,6 +48,7 @@
     letter-spacing: 0.78px;
     margin-right: 93px;
   }
+
   .header-span {
     color: var(--logo-color);
     font-family: Raleway;
@@ -70,7 +72,6 @@
     font-weight: 500;
     line-height: 1.142857143;
     letter-spacing: 0.28px;
-
   }
 
   .nav-studio:hover,
@@ -83,11 +84,11 @@
   }
 
   .nav-portfolio {
-  color: var(--text-color);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.142857143;
-  letter-spacing: 0.28px;
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.142857143;
+    letter-spacing: 0.28px;
   }
 
   .nav-list {
@@ -105,45 +106,48 @@
  }
 
   .nav-contacts {
-  color: var(--text-color);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.142857143;
-  letter-spacing: 0.28px;
-  }
-
-  .header-gmail {
-  color: var(--additional-color);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.142857143;
-  letter-spacing: 0.28px;
-  }
-
-  .header-gmail:hover,
-  .header-gmail:focus {
-    color: var(--akcent-color);
+    color: var(--text-color);
     font-size: 14px;
     font-weight: 500;
     line-height: 1.142857143;
     letter-spacing: 0.28px;
-    }
+  }
 
-  .header-phone {
+  .header-link {
     color: var(--additional-color);
     font-size: 14px;
     font-weight: 500;
     line-height: 1.142857143;
     letter-spacing: 0.28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .header-phone:hover,
-  .header-phone:focus {
+  .header-icon {
+    width: 16px;
+    height: 12px;
+    fill: var(--additional-color);
+    margin-right: 10px;
+  }
+
+  .header-item:last-child {
+    .header-icon {
+      width: 10px;
+      height: 16px;
+    }
+  }
+  
+  .header-link:hover,
+  .header-link:focus {
     color: var(--akcent-color);
     font-size: 14px;
     font-weight: 500;
     line-height: 1.142857143;
     letter-spacing: 0.28px;
+    .header-icon {
+      fill: var(--akcent-color);
+    }
   }
 
   .hero {
@@ -313,7 +317,6 @@
     background-color: var(--main-color);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
- 
   }
   .footer {
     background: var(--footer-color);
