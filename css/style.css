@@ -324,6 +324,11 @@
     padding-bottom: 60px;
   }
 
+ .footerbox {
+    display: flex;
+    gap: 70px;
+ }
+
   .footer-adress {
     margin-top: 20px;
   }
@@ -383,4 +388,44 @@
 
   .footer-item:nth-child(2) {
     margin-bottom: 0px;
+  }
+
+  .footer-links {
+    margin-top: 12px;
+  }
+
+  .links-title {
+    color: var(--main-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .links-checklist {
+    display: flex;
+    gap: 10px;
+  }
+
+  .checklist-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .active {
+    background: var(--akcent-color)
+  }
+
+  .checklist-image {
+    width: 20px;
+    height: 20px;
+    fill: var(--main-color);
   }
