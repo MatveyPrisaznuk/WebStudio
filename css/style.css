@@ -284,7 +284,7 @@
 
   .ourteam-box {
     padding-top: 30px;
-    padding-bottom: 16px;
+    padding-bottom: 30px;
   }
 
   .ourteam-text {
@@ -305,6 +305,7 @@
     letter-spacing: 0.48px;
     margin-top: 10px;
   }
+
   .ourteam-list {
     display: flex;
     gap: 30px;
@@ -320,11 +321,11 @@
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
   }
 
-  .linkbox-roster {
+  .ourteam-roster {
     display: flex;
     justify-content: center;
     gap: 10px;
-    padding-bottom: 30px;
+    margin-top: 16px;
   }
 
   .roster-link {
@@ -336,7 +337,8 @@
     align-items: center;
   }
 
-  .roster-link:hover {
+  .roster-link:hover,
+  .roster-link:focus {
     background: var(--akcent-color);
     .roster-image {
       fill: var(--main-color);
@@ -371,7 +373,8 @@
     gap: 30px;
   }
 
-  .schedule-item {
+  .schedule-link {
+    display: block;
     width: 170px;
     height: 92px;
     border-radius: 4px;
@@ -385,7 +388,7 @@
     fill: var(--svg-color);
   }
 
-  .schedule-item:nth-child(4) {
+  .other-size {
     padding: 24.7px 42.56px 26.68px 43px;
   }
   
@@ -394,13 +397,13 @@
     height: 40px;
   }
 
-  .schedule-item:hover {
+  .schedule-link:hover,
+  .schedule-link:focus {
     border: 1px solid var(--akcent-color);
     .schedule-image {
       fill: var(--akcent-color);
     }
   }
-
   
   .footer {
     background: var(--footer-color);
@@ -411,6 +414,7 @@
  .footerbox {
     display: flex;
     gap: 70px;
+    align-items: baseline;
  }
 
   .footer-adress {
@@ -474,10 +478,6 @@
     margin-bottom: 0px;
   }
 
-  .footer-links {
-    margin-top: 12px;
-  }
-
   .links-title {
     color: var(--main-color);
     font-size: 14px;
@@ -504,8 +504,9 @@
     align-items: center;
   }
 
-  .active {
-    background: var(--akcent-color)
+  .checklist-link:hover
+  ,.checklist-link:focus {
+    background: var(--akcent-color);
   }
 
   .checklist-image {
