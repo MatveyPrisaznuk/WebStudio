@@ -266,6 +266,7 @@
     display: flex;
     gap: 30px;
   }
+
   .ourteam {
     background-color: var(--section-background);
     padding-bottom: 94px;
@@ -458,6 +459,7 @@
     line-height: 1.384615385;
     letter-spacing: 0.78px;
   }
+  
   .footer-span {
     color: var(--main-color);
     font-family: Raleway;
