@@ -399,7 +399,8 @@
 
   .schedule-link:hover,
   .schedule-link:focus {
-    border: 1px solid var(--akcent-color);
+    outline: 1px solid var(--akcent-color);
+    border: none;
     .schedule-image {
       fill: var(--akcent-color);
     }
