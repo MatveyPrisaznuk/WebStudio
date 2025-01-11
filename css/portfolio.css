@@ -73,7 +73,7 @@
    border-left: 1px solid #EEE;
    border-right: 1px solid #EEE;
    background: #FFF;
-  }
+ }
 
  .main-img {
    width: 100%;
@@ -91,4 +91,4 @@
    justify-content: center;
    display: flex;
    gap: 8px;
-}
+ }

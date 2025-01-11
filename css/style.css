@@ -160,7 +160,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
   }
 
   .hero-title {
@@ -226,7 +225,6 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-image: none;
-    
   }
 
   .section-item:first-child::before {
@@ -436,8 +434,11 @@
 
  .footerbox {
     display: flex;
-    gap: 70px;
     align-items: baseline;
+ }
+
+ .addressbox {
+    margin-right: 70px;
  }
 
   .footer-adress {
