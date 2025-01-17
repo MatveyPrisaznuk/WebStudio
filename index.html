@@ -420,10 +420,17 @@
                 <label class="pattern-text">Коментар
                     <textarea class="pattern-entry" placeholder="Введіть текст"></textarea>
                 </label>
-                <label class="pattern-descterms">Погоджуюся з розсилкою та приймаю <a class="descterms-span" href="#">Умови
+                <div class="descterms">
+                    <span class="descterms-span">
+                        <svg class="descterms-icon">
+                            <use href="./img/symbol-defs.svg#icon-check"></use>
+                        </svg>
+                    </span>
+                <input type="checkbox" class="descterms-checkbox" id="descterms-checkbox">
+                    <label class="descterms-text" for="descterms-checkbox">Погоджуюся з розсилкою та приймаю <a class="descterms-link" href="#">Умови
                         договору</a>
-                    <input type="checkbox" class="descterms-checkbox">
                 </label>
+                </div>
                 <button type="submit" class="pattern-submit">Відправити</button>
             </form>
         </div>
