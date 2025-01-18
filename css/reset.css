@@ -20,6 +20,10 @@ input,textarea {
     all: revert;
     outline: none;
     resize: none;
+    margin: 0;  
+    padding: 0;  
+    border: 0;  
+    font: inherit;  
 }
 
 button {

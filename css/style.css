@@ -705,12 +705,12 @@
     bottom: 11px;
   }
 
-  .register-entry:hover,
-  .register-entry:focus {
-    border-radius: 4px;
-    border: 1px solid var(--akcent-color);
-    .register-icon {
-      fill: var(--akcent-color);
+  .register-text:hover,
+  .register-text:focus {
+    fill: var(--akcent-color);
+    .register-entry {
+      border-radius: 4px;
+      border: 1px solid #2196F3;
     }
   }
 
@@ -788,6 +788,8 @@
   .descterms-checkbox {
     width: 16px;
     height: 15px;
+    margin-right: 8px;
+    align-self: center;
   }
 
   .pattern-submit {
