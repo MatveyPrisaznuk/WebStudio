@@ -624,15 +624,10 @@
     transform: translate(-50%, -50%);
     position: absolute;
     width: 528px;
-    height: 581px;
     border-radius: 4px;
     background: #FFF;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
     padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 
   .modal-buttonclose {
@@ -683,6 +678,9 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.12px;
+  }
+
+  .register-entybox {
     position: relative;
   }
 
@@ -695,23 +693,24 @@
     padding-left: 42px;
   }
 
+  .register-entry:hover,
+  .register-entry:focus {
+    border: 1px solid var(--akcent-color);
+  }
+
+  .register-entry:hover + .register-icon, 
+  .register-entry:focus + .register-icon {
+    fill: var(--akcent-color);
+  }
+
   .register-icon {
     width: 18px;
     height: 18px;
     position: absolute;
-    top: 32px;
+    top: 17px;
     left: 11px;
     right: 458px;
     bottom: 11px;
-  }
-
-  .register-text:hover,
-  .register-text:focus {
-    fill: var(--akcent-color);
-    .register-entry {
-      border-radius: 4px;
-      border: 1px solid #2196F3;
-    }
   }
 
   .register-item:first-child {
@@ -786,10 +785,7 @@
   }
 
   .descterms-checkbox {
-    width: 16px;
-    height: 15px;
     margin-right: 8px;
-    align-self: center;
   }
 
   .pattern-submit {

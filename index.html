@@ -394,26 +394,32 @@
                 <ul class="pattern-register">
                     <li class="register-item">
                         <label class="register-text">Ім'я
-                            <input type="text" class="register-entry">
-                            <svg class="register-icon">
-                                <use href="./img/symbol-defs.svg#icon-black_person"></use>
-                            </svg>
+                            <div class="register-entybox">
+                                <input type="text" class="register-entry" required>
+                                <svg class="register-icon">
+                                    <use href="./img/symbol-defs.svg#icon-black_person"></use>
+                                </svg>
+                            </div>
                         </label>
                     </li>
                     <li class="register-item">
                         <label class="register-text">Телефон
-                            <input type="tel" class="register-entry">
-                            <svg class="register-icon">
-                                <use href="./img/symbol-defs.svg#icon-black_phone"></use>
-                            </svg>
+                            <div class="register-entybox">
+                                <input type="tel" class="register-entry" required>
+                                <svg class="register-icon">
+                                    <use href="./img/symbol-defs.svg#icon-black_phone"></use>
+                                </svg>
+                            </div>
                         </label>
                     </li>
                     <li class="register-item">
                         <label class="register-text">Пошта
-                            <input type="email" class="register-entry">
-                            <svg class="register-icon">
-                                <use href="./img/symbol-defs.svg#icon-black_email"></use>
-                            </svg>
+                            <div class="register-entybox">
+                                <input type="email" class="register-entry" required>
+                                <svg class="register-icon">
+                                    <use href="./img/symbol-defs.svg#icon-black_email"></use>
+                                </svg>
+                            </div>
                         </label>
                     </li>
                 </ul>
@@ -421,7 +427,7 @@
                     <textarea class="pattern-entry" placeholder="Введіть текст"></textarea>
                 </label>
                 <div class="descterms">
-                    <input type="checkbox" class="descterms-checkbox" id="descterms-checkbox">
+                    <input type="checkbox" class="descterms-checkbox" id="descterms-checkbox" required>
                     <label class="descterms-text" for="descterms-checkbox">Погоджуюся з розсилкою та приймаю <a
                             class="descterms-link" href="#">Умови
                             договору</a>
