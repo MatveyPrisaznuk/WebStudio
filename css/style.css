@@ -678,9 +678,6 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.12px;
-  }
-
-  .register-entybox {
     position: relative;
   }
 
@@ -707,7 +704,7 @@
     width: 18px;
     height: 18px;
     position: absolute;
-    top: 17px;
+    top: 32px;
     left: 11px;
     right: 458px;
     bottom: 11px;
