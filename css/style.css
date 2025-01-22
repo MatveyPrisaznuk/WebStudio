@@ -65,6 +65,7 @@
     font-weight: 500;
     line-height: 1.142857143;
     letter-spacing: 0.28px;
+    position: relative;
   }
 
   .active-page {
@@ -82,6 +83,17 @@
     font-weight: 500;
     line-height: 1.142857143;
     letter-spacing: 0.28px;
+  }
+
+  .nav-studio::after {
+    content: " ";
+    position: absolute;
+    top: 47px;
+    display: block;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--akcent-color);
   }
 
   .nav-portfolio {
