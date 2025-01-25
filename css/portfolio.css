@@ -94,13 +94,40 @@
    background: #FFF;
  }
 
- .main-img {
-   width: 100%;
- }
-
  .main-item {
    flex-basis: calc((100% - 60px) /3);
  }
+
+ .main-img {
+  width: 100%;
+}
+
+.main-item:first-child {
+  position: relative;
+}
+
+.main-item:first-child:hover {
+  .main-subject {
+    visibility: visible;
+  }
+}
+
+.main-subject {
+  position: absolute;
+  top: 0;
+  width: 322px;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.555555556;
+  letter-spacing: 0.54px;
+  background: rgba(33, 150, 243, 0.90);
+  padding: 63px 24px;
+  width: 370px;
+  height: 294px;
+  visibility: hidden;
+}
 
  .main-item:hover {
    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
