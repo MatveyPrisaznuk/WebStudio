@@ -12,13 +12,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
         integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="header">
         <div class="container header-box">
-            <a href="./index.html" class="header-logo">Web<span class="header-span">Studio</span></a>
+            <a href="./index.html" class="header-logo animate__animated animate__backInLeft">Web<span class="header-span">Studio</span></a>
             <nav class="header-nav">
                 <ul class="nav-list">
                     <li class="nav-item">
@@ -99,15 +101,15 @@
             <div class="container">
                 <h2 class="whatwedo-title">Чим ми займаємося</h2>
                 <ul class="whatwedo-list">
-                    <li class="whatwedo-item">
+                    <li class="whatwedo-item" data-aos="fade-up">
                         <img src="./img/tablet.jpg" alt="tablet" class="whatwedo-img">
                         <p class="whatwedo-desc">Десктопні додатки</p>
                     </li>
-                    <li class="whatwedo-item">
+                    <li class="whatwedo-item" data-aos="fade-up">
                         <img src="./img/leptop.jpg" alt="leptop" class="whatwedo-img">
                         <p class="whatwedo-desc">Мобільні додатки</p>
                     </li>
-                    <li class="whatwedo-item">
+                    <li class="whatwedo-item" data-aos="fade-up">
                         <img src="./img/ipad.jpg" alt="ipad" class="whatwedo-img">
                         <p class="whatwedo-desc">Дизайнерські рішення</p>
                     </li>
@@ -118,7 +120,7 @@
             <div class="container">
                 <h2 class="ourteam-title">Наша команда</h2>
                 <ul class="ourteam-list">
-                    <li class="ourteam-item">
+                    <li class="ourteam-item" data-aos="fade-right">
                         <img src="./img/igor.jpg" alt="igor_Product Designer" class="ourteam-img">
                         <div class="ourteam-box">
                             <h3 class="ourteam-text">Ігор Дем'яненко</h3>
@@ -155,7 +157,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="ourteam-item">
+                    <li class="ourteam-item" data-aos="fade-right">
                         <img src="./img/olga.jpg" alt="olga_FrontendDeveloper" class="ourteam-img">
                         <div class="ourteam-box">
                             <h3 class="ourteam-text">Ольга Рєпіна</h3>
@@ -192,7 +194,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="ourteam-item">
+                    <li class="ourteam-item" data-aos="fade-right">
                         <img src="./img/mikola.jpg" alt="mikola_Marketing" class="ourteam-img">
                         <div class="ourteam-box">
                             <h3 class="ourteam-text">Микола Тарасов</h3>
@@ -229,7 +231,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="ourteam-item">
+                    <li class="ourteam-item" data-aos="fade-right">
                         <img src="./img/michailo.jpg" alt="michailo_UIDesigner" class="ourteam-img">
                         <div class="ourteam-box">
                             <h3 class="ourteam-text">Михайло Єрмаков</h3>
@@ -273,42 +275,42 @@
             <div class="container">
                 <h2 class="clients-title">Постійні клієнти</h2>
                 <ul class="clients-schedule">
-                    <li class="schedule-item">
+                    <li class="schedule-item" data-aos="fade-up">
                         <a href="#" class="schedule-link">
                             <svg class="schedule-image">
                                 <use href="./img/symbol-defs.svg#icon-ya_co"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="schedule-item">
+                    <li class="schedule-item" data-aos="fade-up">
                         <a href="#" class="schedule-link">
                             <svg class="schedule-image">
                                 <use href="./img/symbol-defs.svg#icon-tag_line_here"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="schedule-item">
+                    <li class="schedule-item" data-aos="fade-up">
                         <a href="#" class="schedule-link">
                             <svg class="schedule-image">
                                 <use href="./img/symbol-defs.svg#icon-company"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="schedule-item">
+                    <li class="schedule-item" data-aos="fade-up">
                         <a href="#" class="schedule-link other-size">
                             <svg class="schedule-image fooster_peters">
                                 <use href="./img/symbol-defs.svg#icon-fooster_peters"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="schedule-item">
+                    <li class="schedule-item" data-aos="fade-up">
                         <a href="#" class="schedule-link">
                             <svg class="schedule-image">
                                 <use href="./img/symbol-defs.svg#icon-brand"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="schedule-item">
+                    <li class="schedule-item" data-aos="fade-up">
                         <a href="#" class="schedule-link">
                             <svg class="schedule-image">
                                 <use href="./img/symbol-defs.svg#icon-tag_line"></use>
@@ -432,5 +434,9 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
