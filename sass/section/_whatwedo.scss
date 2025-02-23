@@ -1,0 +1,38 @@
+.whatwedo {
+    padding-bottom: 94px;
+  }
+
+  .whatwedo-title {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.166666667;
+    letter-spacing: 1.08px;
+  }
+
+  .whatwedo-list {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+  }
+
+  .whatwedo-item {
+    position: relative;
+  }
+
+  .whatwedo-desc {
+    color: var(--main-color);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0px;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.80);
+    padding: 27px 0px;
+  }
