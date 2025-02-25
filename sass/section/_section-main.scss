@@ -1,27 +1,13 @@
-.section-main {
+  .section-main {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-  
-  .section-title {
-    color: var(--text-color);
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.142857143;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
+
+  .section-list {
+    display: flex;
+    gap: 30px;
   }
 
-  .section-desc {
-    color: var(--additional-color);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.714285714;
-    letter-spacing: 0.42px;
-    width: 270px;
-    margin-top: 10px;
-  }
-  
   .section-item::before {
     content: " ";
     display: block;
@@ -50,8 +36,22 @@
   .section-item:nth-child(4)::before {
     background-image: url(../img/astronaut.png);
   }
+  
+  .section-title {
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.142857143;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
 
-  .section-list {
-    display: flex;
-    gap: 30px;
+  .section-desc {
+    color: var(--additional-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.714285714;
+    letter-spacing: 0.42px;
+    width: 270px;
+    margin-top: 10px;
   }

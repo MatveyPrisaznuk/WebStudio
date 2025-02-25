@@ -1,17 +1,35 @@
-.footer {
+  .footer {
     background: var(--footer-color);
     padding-top: 60px;
     padding-bottom: 60px;
   }
 
- .footerbox {
+  .footerbox {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
  }
 
- .addressbox {
+  .addressbox {
     margin-right: 70px;
+ }
+
+  .footer-logo {
+    color: var(--akcent-color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.384615385;
+    letter-spacing: 0.78px;
+ }
+
+  .footer-span {
+   color: var(--main-color);
+   font-family: Raleway;
+   font-size: 26px;
+   font-weight: 700;
+   line-height: 1.384615385;
+   letter-spacing: 0.78px;
  }
 
   .footer-adress {
@@ -25,6 +43,18 @@
     font-weight: 400;
     line-height: 1.714285714;
     letter-spacing: 0.42px;
+  }
+
+  .footer-list {
+    margin-top: 9px;
+  }
+
+  .footer-item {
+    margin-bottom: 9px;
+  }
+
+  .footer-item:nth-child(2) {
+    margin-bottom: 0px;
   }
 
   .footer-gmail {
@@ -43,37 +73,10 @@
     font-weight: 400;
     line-height: 1.714285714; 
     letter-spacing: 0.42px;
- 
   }
 
-  .footer-logo {
-    color: var(--akcent-color);
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.384615385;
-    letter-spacing: 0.78px;
-  }
-  
-  .footer-span {
-    color: var(--main-color);
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.384615385;
-    letter-spacing: 0.78px;
-  }
-
-  .footer-list {
-    margin-top: 9px;
-  }
-
-  .footer-item {
-    margin-bottom: 9px;
-  }
-
-  .footer-item:nth-child(2) {
-    margin-bottom: 0px;
+  .footer-links {
+    margin-right: 93px;
   }
 
   .links-title {
@@ -114,10 +117,6 @@
     width: 20px;
     height: 20px;
     fill: var(--main-color);
-  }
-
-  .footer-links {
-    margin-right: 93px;
   }
 
   .forms-title {
