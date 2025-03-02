@@ -23,7 +23,7 @@
     position: absolute;
     width: 528px;
     border-radius: 4px;
-    background: var(--main-color);
+    background: $main-color;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
     padding: 40px;
     transition-property: transform;
@@ -55,12 +55,12 @@
   .modal-buttonclose:hover,
   .modal-buttonclose:focus {
     .buttonclose-icon {
-      fill: var(--akcent-color);
+      fill: $akcent-color;
     }
   }
 
   .modal-title {
-    color: var(--text-color);
+    color: $text-color;
     text-align: center;
     font-size: 20px;
     font-style: normal;
@@ -86,7 +86,7 @@
   }
 
   .register-text {
-    color: var(--additional-color);
+    color: $additional-color;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -109,7 +109,7 @@
 
   .register-entry:hover,
   .register-entry:focus {
-    border: 1px solid var(--akcent-color);
+    border: 1px solid $akcent-color;
   }
 
   .register-icon {
@@ -127,11 +127,11 @@
 
   .register-entry:hover + .register-icon, 
   .register-entry:focus + .register-icon {
-    fill: var(--akcent-color);
+    fill: $akcent-color;
   }
 
   .pattern-text {
-    color: var(--additional-color);
+    color: $additional-color;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -159,7 +159,7 @@
 
   .pattern-entry:hover,
   .pattern-entry:focus {
-    border: 1px solid var(--akcent-color);
+    border: 1px solid $akcent-color;
   }
 
   .descterms {
@@ -173,7 +173,7 @@
   }
 
   .descterms-text {
-    color: var(--additional-color);
+    color: $additional-color;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -182,7 +182,7 @@
   }
 
   .descterms-link {
-    color: var(--akcent-color);
+    color: $akcent-color;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -197,14 +197,14 @@
   }
 
   .pattern-submit {
-    color: var(--main-color);
+    color: $main-color;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 1.875; 
     letter-spacing: 0.96px;
     border-radius: 4px;
-    background: var(--akcent-color);
+    background: $akcent-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 10px 52px 10px 52px;
     margin-top: 30px;
