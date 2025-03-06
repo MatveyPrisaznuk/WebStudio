@@ -214,17 +214,15 @@ body {
   border: none;
 }
 
-.section-main {
+.work {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-.section-list {
+.work__list {
   display: flex;
   gap: 30px;
 }
-
-.section-item::before {
+.work__item::before {
   content: " ";
   display: block;
   width: 270px;
@@ -236,24 +234,19 @@ body {
   background-size: auto;
   background-image: none;
 }
-
-.section-item:first-child::before {
+.work__item:first-child::before {
   background-image: url(../img/antenna.png);
 }
-
-.section-item:nth-child(2)::before {
+.work__item:nth-child(2)::before {
   background-image: url(../img/clock.png);
 }
-
-.section-item:nth-child(3)::before {
+.work__item:nth-child(3)::before {
   background-image: url(../img/diagram.png);
 }
-
-.section-item:nth-child(4)::before {
+.work__item:nth-child(4)::before {
   background-image: url(../img/astronaut.png);
 }
-
-.section-title {
+.work__title {
   color: #212121;
   font-size: 14px;
   font-weight: 700;
@@ -261,8 +254,7 @@ body {
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
-
-.section-desc {
+.work__desc {
   color: #757575;
   font-size: 14px;
   font-weight: 400;
@@ -275,8 +267,7 @@ body {
 .whatwedo {
   padding-bottom: 94px;
 }
-
-.whatwedo-title {
+.whatwedo__title {
   color: #212121;
   text-align: center;
   font-size: 36px;
@@ -284,18 +275,15 @@ body {
   line-height: 1.166666667;
   letter-spacing: 1.08px;
 }
-
-.whatwedo-list {
+.whatwedo__list {
   margin-top: 50px;
   display: flex;
   gap: 30px;
 }
-
-.whatwedo-item {
+.whatwedo__item {
   position: relative;
 }
-
-.whatwedo-desc {
+.whatwedo__desc {
   color: #FFFFFF;
   text-align: center;
   font-size: 14px;
@@ -316,8 +304,7 @@ body {
   padding-bottom: 94px;
   padding-top: 94px;
 }
-
-.ourteam-title {
+.ourteam__title {
   color: #212121;
   text-align: center;
   font-size: 36px;
@@ -326,28 +313,23 @@ body {
   letter-spacing: 1.08px;
   margin-bottom: 50px;
 }
-
-.ourteam-list {
+.ourteam__list {
   display: flex;
   gap: 30px;
 }
-
-.ourteam-item {
+.ourteam__item {
   background-color: #FFFFFF;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
-
-.ourteam-img {
+.ourteam__img {
   width: 270px;
 }
-
-.ourteam-box {
+.ourteam__box {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
-.ourteam-text {
+.ourteam__text {
   color: #212121;
   text-align: center;
   font-size: 16px;
@@ -355,8 +337,7 @@ body {
   line-height: 1.1875;
   letter-spacing: 0.48px;
 }
-
-.ourteam-desc {
+.ourteam__desc {
   color: #757575;
   text-align: center;
   font-size: 16px;
@@ -365,15 +346,13 @@ body {
   letter-spacing: 0.48px;
   margin-top: 10px;
 }
-
-.ourteam-roster {
+.ourteam__roster {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-top: 16px;
 }
-
-.roster-link {
+.ourteam .roster__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -384,8 +363,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.roster-image {
+.ourteam .roster__image {
   width: 20px;
   height: 20px;
   fill: #AFB1B8;
@@ -393,13 +371,10 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.roster-link:hover,
-.roster-link:focus {
+.ourteam .roster__link:hover, .ourteam .roster__link:focus {
   background-color: #2196F3;
 }
-.roster-link:hover .roster-image,
-.roster-link:focus .roster-image {
+.ourteam .roster__link:hover .roster__image, .ourteam .roster__link:focus .roster__image {
   fill: #FFFFFF;
 }
 
@@ -407,8 +382,7 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-.clients-title {
+.clients__title {
   color: #212121;
   text-align: center;
   font-size: 36px;
@@ -418,14 +392,12 @@ body {
   letter-spacing: 1.08px;
   margin-bottom: 50px;
 }
-
-.clients-schedule {
+.clients__schedule {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
-
-.schedule-link {
+.clients .schedule__link {
   display: block;
   width: 170px;
   height: 92px;
@@ -436,8 +408,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.schedule-image {
+.clients .schedule__image {
   width: 106px;
   height: 60px;
   fill: #AFB1B8;
@@ -445,22 +416,17 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.schedule-link:hover,
-.schedule-link:focus {
+.clients .schedule__link:hover, .clients .schedule__link:focus {
   outline: 1px solid #2196F3;
   border: none;
 }
-.schedule-link:hover .schedule-image,
-.schedule-link:focus .schedule-image {
+.clients .schedule__link:hover .schedule__image, .clients .schedule__link:focus .schedule__image {
   fill: #2196F3;
 }
-
-.other-size {
+.clients .other__size {
   padding: 24.7px 42.56px 26.68px 43px;
 }
-
-.fooster_peters {
+.clients .fooster__peters {
   width: 84px;
   height: 40px;
 }

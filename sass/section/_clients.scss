@@ -1,61 +1,62 @@
   .clients {
     padding-top: 94px;
     padding-bottom: 94px;
-  }
 
-  .clients-title {
-    color: $text-color;
-    text-align: center;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.08px;
-    margin-bottom: 50px;
-  }
+    &__title {
+      color: $text-color;
+      text-align: center;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 1.08px;
+      margin-bottom: 50px;
+    }
 
-  .clients-schedule {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-  }
+    &__schedule {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
 
-  .schedule-link {
-    display: block;
-    width: 170px;
-    height: 92px;
-    border-radius: 4px;
-    outline: 1px solid $svg-color;
-    padding: 16px 32px 16px 32px;
-    transition-property: outline;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+    .schedule {
+      &__link {
+        display: block;
+        width: 170px;
+        height: 92px;
+        border-radius: 4px;
+        outline: 1px solid $svg-color;
+        padding: 16px 32px 16px 32px;
+        transition-property: outline;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
 
-  .schedule-image {
-    width: 106px;
-    height: 60px;
-    fill: $svg-color;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+      &__image {
+        width: 106px;
+        height: 60px;
+        fill: $svg-color;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
 
-  .schedule-link:hover,
-  .schedule-link:focus {
-    outline: 1px solid $akcent-color;
-    border: none;
-    .schedule-image {
-      fill: $akcent-color;
+      &__link:hover,
+      &__link:focus {
+        outline: 1px solid $akcent-color;
+        border: none;
+        .schedule__image {
+          fill: $akcent-color;
+        }
+      }
+    }
+
+    .other__size {
+      padding: 24.7px 42.56px 26.68px 43px;
+    }
+    
+    .fooster__peters {
+      width: 84px;
+      height: 40px;
     }
   }
-
-  .other-size {
-    padding: 24.7px 42.56px 26.68px 43px;
-  }
-  
-  .fooster_peters {
-    width: 84px;
-    height: 40px;
-  }
-  
