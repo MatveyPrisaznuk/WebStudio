@@ -436,18 +436,15 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
-.footerbox {
+.footer .footerbox {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
 }
-
-.addressbox {
+.footer__adressbox {
   margin-right: 70px;
 }
-
-.footer-logo {
+.footer__logo {
   color: #2196F3;
   font-family: Raleway;
   font-size: 26px;
@@ -455,8 +452,7 @@ body {
   line-height: 1.384615385;
   letter-spacing: 0.78px;
 }
-
-.footer-span {
+.footer__span {
   color: #FFFFFF;
   font-family: Raleway;
   font-size: 26px;
@@ -464,12 +460,10 @@ body {
   line-height: 1.384615385;
   letter-spacing: 0.78px;
 }
-
-.footer-adress {
+.footer__adress {
   margin-top: 20px;
 }
-
-.footer-adress-link {
+.footer__link {
   color: #FFFFFF;
   font-size: 14px;
   font-style: normal;
@@ -477,20 +471,16 @@ body {
   line-height: 1.714285714;
   letter-spacing: 0.42px;
 }
-
-.footer-list {
+.footer__list {
   margin-top: 9px;
 }
-
-.footer-item {
+.footer__item {
   margin-bottom: 9px;
 }
-
-.footer-item:nth-child(2) {
+.footer__item:nth-child(2) {
   margin-bottom: 0px;
 }
-
-.footer-gmail {
+.footer__gmail {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-style: normal;
@@ -498,8 +488,7 @@ body {
   line-height: 1.714285714;
   letter-spacing: 0.42px;
 }
-
-.footer-phone {
+.footer__phone {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-style: normal;
@@ -507,12 +496,10 @@ body {
   line-height: 1.714285714;
   letter-spacing: 0.42px;
 }
-
-.footer-links {
+.footer__linkbox {
   margin-right: 93px;
 }
-
-.links-title {
+.footer .linkbox__title {
   color: #FFFFFF;
   font-size: 14px;
   font-style: normal;
@@ -522,13 +509,11 @@ body {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-
-.links-checklist {
+.footer .linkbox__checklist {
   display: flex;
   gap: 10px;
 }
-
-.checklist-link {
+.footer .checklist__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -540,19 +525,15 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.checklist-link:hover,
-.checklist-link:focus {
+.footer .checklist__link:hover, .footer .checklist__link:focus {
   background-color: #2196F3;
 }
-
-.checklist-image {
+.footer .checklist__image {
   width: 20px;
   height: 20px;
   fill: #FFFFFF;
 }
-
-.forms-title {
+.footer .forms__title {
   color: #FFFFFF;
   font-size: 14px;
   font-style: normal;
@@ -562,13 +543,11 @@ body {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-
-.forms-shape {
+.footer .forms__shape {
   display: flex;
   gap: 12px;
 }
-
-.shape-entry {
+.footer .shape__entry {
   width: 47px;
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
@@ -585,8 +564,7 @@ body {
   background: rgba(33, 150, 243, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-
-.shape-submit {
+.footer .shape__submit {
   border-radius: 4px;
   background: #2196F3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -599,8 +577,7 @@ body {
   letter-spacing: 0.96px;
   position: relative;
 }
-
-.submit-icon {
+.footer .submit__icon {
   width: 24px;
   height: 24px;
   fill: #FFFFFF;
