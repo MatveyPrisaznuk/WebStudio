@@ -800,8 +800,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-buttonclose {
+.modal__buttonclose {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -813,21 +812,17 @@ body {
   right: 8px;
   top: 8px;
 }
-
-.buttonclose-icon {
+.modal__buttonclosee:hover .buttonclose__icon, .modal__buttonclose:focus .buttonclose__icon {
+  fill: #2196F3;
+}
+.modal .buttonclose__icon {
   width: 18px;
   height: 18px;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-buttonclose:hover .buttonclose-icon,
-.modal-buttonclose:focus .buttonclose-icon {
-  fill: #2196F3;
-}
-
-.modal-title {
+.modal__title {
   color: #212121;
   text-align: center;
   font-size: 20px;
@@ -836,22 +831,13 @@ body {
   line-height: normal;
   letter-spacing: 0.6px;
 }
-
-.pattern-register {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.register-item:first-child {
+.modal .register__item:first-child {
   margin-top: 12px;
 }
-
-.register-item:nth-child(3) .register-entry {
+.modal .register__item:nth-child(3) .register__entry {
   margin-bottom: 10px;
 }
-
-.register-text {
+.modal .register__text {
   color: #757575;
   font-size: 12px;
   font-style: normal;
@@ -860,8 +846,7 @@ body {
   letter-spacing: 0.12px;
   position: relative;
 }
-
-.register-entry {
+.modal .register__entry {
   margin-top: 4px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -872,13 +857,13 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.register-entry:hover,
-.register-entry:focus {
+.modal .register__entry:hover, .modal .register__entry:focus {
   border: 1px solid #2196F3;
 }
-
-.register-icon {
+.modal .register__entry:hover + .register__icon, .modal .register__entry:focus + .register__icon {
+  fill: #2196F3;
+}
+.modal .register__icon {
   width: 18px;
   height: 18px;
   position: absolute;
@@ -890,22 +875,21 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.register-entry:hover + .register-icon,
-.register-entry:focus + .register-icon {
-  fill: #2196F3;
+.modal .pattern__register {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-
-.pattern-text {
+.modal .pattern__text {
   color: #757575;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.12px;
+  margin-top: 10px;
 }
-
-.pattern-entry {
+.modal .pattern__entry {
   margin-top: 4px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -922,48 +906,10 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.pattern-entry:hover,
-.pattern-entry:focus {
+.modal .pattern__entry:hover, .modal .pattern__entry:focus {
   border: 1px solid #2196F3;
 }
-
-.descterms {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.descterms-checkbox {
-  margin-right: 8px;
-}
-
-.descterms-text {
-  color: #757575;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.714285714;
-  letter-spacing: 0.42px;
-}
-
-.descterms-link {
-  color: #2196F3;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
-  text-decoration-thickness: auto;
-  text-underline-offset: auto;
-  text-underline-position: from-font;
-}
-
-.pattern-submit {
+.modal .pattern__submit {
   color: #FFFFFF;
   font-size: 16px;
   font-style: normal;
@@ -978,4 +924,35 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.modal .descterms {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.modal .descterms__checkbox {
+  margin-right: 8px;
+}
+.modal .descterms__text {
+  color: #757575;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.714285714;
+  letter-spacing: 0.42px;
+}
+.modal .descterms__link {
+  color: #2196F3;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
 }/*# sourceMappingURL=main.css.map */
