@@ -4,9 +4,10 @@
     padding-bottom: 60px;
 
     .footerbox {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
+      // display: flex;
+      // align-items: baseline;
+      // justify-content: space-between;
+      @include flexbox($align: baseline, $justify: space-between);
     }
 
     &__adressbox {
@@ -102,12 +103,14 @@
         height: 44px;
         border-radius: 50%;
         background: rgba(255, 255, 255, 0.10);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        @include flexbox();
         transition-property: background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        // transition-duration: 250ms;
+        // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @extend %transition;
       
         &:hover,
         &:focus {
@@ -135,8 +138,9 @@
       }
 
       &__shape {
-        display: flex;
-        gap: 12px;
+        // display: flex;
+        // gap: 12px;
+        @include flexbox($gap: 12px);
       }
     }
 

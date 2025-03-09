@@ -7,8 +7,9 @@
       letter-spacing: 0.28px;
       position: relative;
       transition-property: color;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      // transition-duration: 250ms;
+      // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      @extend %transition;
     
       &:hover,
       &:focus {
@@ -28,8 +29,9 @@
       letter-spacing: 0.28px;
       position: relative;
       transition-property: color;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      // transition-duration: 250ms;
+      // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      @extend %transition;
     
       &:hover,
       &:focus {
@@ -69,9 +71,10 @@
     border-top: 1px solid $line-color;
 
     &__buttonbox {
-      justify-content: center;
-      display: flex;
-      gap: 8px;
+      // justify-content: center;
+      // display: flex;
+      // gap: 8px;
+      @include flexbox($gap: 8px);
     }
 
     &__button {
@@ -87,8 +90,9 @@
       border: none;
       box-shadow: none;
       transition-property: color,background-color,box-shadow;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      // transition-duration: 250ms;
+      // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      @extend %transition;
     
       &:hover,
       &:focus {
@@ -99,10 +103,12 @@
     }
 
     &__mainlist {
-      display: flex;
-      flex-wrap: wrap;
+      // display: flex;
+      // flex-wrap: wrap;
+      // gap: 30px;
+      @include flexbox($gap: 30px);
       margin-top: 50px;
-      gap: 30px;
+      
     }
 
     .mainlist {
@@ -110,8 +116,9 @@
         flex-basis: calc((100% - 60px) /3);
         position: relative;
         transition-property: box-shadow,visibility,transform;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        // transition-duration: 250ms;
+        // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @extend %transition;
       
         &:hover {
           box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
@@ -148,8 +155,9 @@
         visibility: hidden;
         transform: translateY(100%);
         transition-property: transform, visibility;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        // transition-duration: 250ms;
+        // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @extend %transition;
       }
 
       &__box {

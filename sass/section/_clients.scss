@@ -14,9 +14,10 @@
     }
 
     &__schedule {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
+      // display: flex;
+      // justify-content: center;
+      // gap: 30px;
+      @include flexbox($gap: 30px);
     }
 
     .schedule {
@@ -28,8 +29,9 @@
         outline: 1px solid $svg-color;
         padding: 16px 32px 16px 32px;
         transition-property: outline;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        // transition-duration: 250ms;
+        // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @extend %transition;
       }
 
       &__image {
@@ -37,8 +39,9 @@
         height: 60px;
         fill: $svg-color;
         transition-property: fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        // transition-duration: 250ms;
+        // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @extend %transition;
       }
 
       &__link:hover,

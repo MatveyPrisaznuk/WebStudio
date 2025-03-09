@@ -3,8 +3,9 @@
     padding-bottom: 25px;
 
     &__box {
-      display: flex;
-      align-items: center;
+      // display: flex;
+      // align-items: center;
+      @include flexbox();
     }
 
     &__logo {
@@ -28,8 +29,9 @@
 
     .nav { 
       &__list {
-        display: flex;
-        gap: 50px;
+        // display: flex;
+        // gap: 50px;
+        @include flexbox($gap: 50px);
       }
 
       &__studio {
@@ -40,8 +42,9 @@
         letter-spacing: 0.28px;
         position: relative;
         transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        // transition-duration: 250ms;
+        // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @extend %transition;
 
         &:hover,
         &:focus {
@@ -72,8 +75,9 @@
         line-height: 1.142857143;
         letter-spacing: 0.28px;
         transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        // transition-duration: 250ms;
+        // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @extend %transition;
 
         &:hover,
         &:focus {
@@ -103,8 +107,9 @@
     }
 
     &__list {
-      display: flex;
-      gap: 30px;
+      // display: flex;
+      // gap: 30px;
+      @include flexbox($gap: 30px);
       margin-left: auto;
     }
 
@@ -114,12 +119,14 @@
       font-weight: 500;
       line-height: 1.142857143;
       letter-spacing: 0.28px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      @include flexbox();
       transition-property: color;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      // transition-duration: 250ms;
+      // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      @extend %transition;
 
       &:hover,
       &:focus {
@@ -140,8 +147,9 @@
       fill: $additional-color;
       margin-right: 10px;
       transition-property: fill;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      // transition-duration: 250ms;
+      // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      @extend %transition;
     }
 
     &__item:last-child {
