@@ -21,27 +21,43 @@
     &__logo {
       color: $akcent-color;
       font-family: Raleway;
-      font-size: 26px;
+      font-size: 24px;
       font-weight: 700;
-      line-height: 1.384615385;
-      letter-spacing: 0.78px;
+      line-height: 1.375;
+      letter-spacing: 0.72px;
       margin-right: 93px;
+  
+      @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.384615385;
+        letter-spacing: 0.78px;
+      }
     }
 
     &__span {
       color: $logo-color;
       font-family: Raleway;
-      font-size: 26px;
+      font-size: 24px;
       font-weight: 700;
-      line-height: 1.384615385;
-      letter-spacing: 0.78px;
+      line-height: 1.375;
+      letter-spacing: 0.72px;
+  
+      @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.384615385;
+        letter-spacing: 0.78px;
+      }
     }
 
     .nav { 
       &__list {
         // display: flex;
         // gap: 50px;
-        @include flexbox($gap: 50px);
+        @include flexbox($display: none);
+
+        @media screen and (min-width: 768px) {
+          @include flexbox($gap: 50px);
+        }
       }
 
       &__studio {
@@ -119,8 +135,16 @@
     &__list {
       // display: flex;
       // gap: 30px;
-      @include flexbox($gap: 30px);
+      @include flexbox($gap: 30px, $display: none);
       margin-left: auto;
+
+      @media screen and (min-width: 768px) {
+       @include flexbox($direction: column, $gap: 10px)
+      }
+
+      @media screen and (min-width: 1200px) {
+        @include flexbox($direction: row, $gap: 30px)
+      }
     }
 
     &__link {
@@ -141,31 +165,47 @@
       &:hover,
       &:focus {
         color: $akcent-color;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 500;
-        line-height: 1.142857143;
-        letter-spacing: 0.28px;
+        line-height: 1.166666667;
+        letter-spacing: 0.24px;
         .header__icon {
           fill: $akcent-color;
         }
       }
+
+      @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.142857143;
+        letter-spacing: 0.28px;
+      }
     }
 
     &__icon {
-      width: 16px;
-      height: 12px;
+      width: 14px;
+      height: 10px;
       fill: $additional-color;
       margin-right: 10px;
       transition-property: fill;
       // transition-duration: 250ms;
       // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       @extend %transition;
+
+      @media screen and (min-width: 1200px) {
+        width: 16px;
+        height: 12px;
+      }
     }
 
     &__item:last-child {
       .header__icon {
         width: 10px;
-        height: 16px;
+        height: 14px;
+
+        @media screen and (min-width: 1200px) {
+          width: 10px;
+          height: 16px;
+        }
       }
     }  
   }
