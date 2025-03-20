@@ -5,7 +5,7 @@
     &__list {
       // display: flex;
       // gap: 30px;
-      @include flexbox($gap: 30px, $justify: none, $align: none);
+      @include flexbox($gap: 30px, $justify: normal, $align: normal);
     }
 
     &__item::before {
