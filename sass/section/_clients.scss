@@ -1,16 +1,32 @@
   .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
 
     &__title {
       color: $text-color;
       text-align: center;
-      font-size: 36px;
+      font-size: 28px;
       font-style: normal;
       font-weight: 700;
-      line-height: normal;
-      letter-spacing: 1.08px;
+      line-height: 1.178571429;
+      letter-spacing: 0.84px;
       margin-bottom: 50px;
+
+      @media screen and (min-width: 1200px) {
+        color: $text-color;
+        text-align: center;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.166666667;
+        letter-spacing: 1.08px;
+        margin-bottom: 50px;
+      }
     }
 
     &__schedule {
@@ -23,15 +39,27 @@
     .schedule {
       &__link {
         display: block;
-        width: 170px;
+        width: 210px;
         height: 92px;
         border-radius: 4px;
         outline: 1px solid $svg-color;
-        padding: 16px 32px 16px 32px;
+        padding: 16px 52px;
         transition-property: outline;
         // transition-duration: 250ms;
         // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         @extend %transition;
+
+        @media screen and (min-width: 768px) {
+          width: 226px;
+          height: 92px;
+          padding: 16px 60px;
+        }
+
+        @media screen and (min-width: 1200px) {
+          width: 170px;
+          height: 92px;
+          padding: 16px 32px;
+        }
       }
 
       &__image {
@@ -54,12 +82,7 @@
       }
     }
 
-    .other__size {
-      padding: 24.7px 42.56px 26.68px 43px;
-    }
-    
     .fooster__peters {
-      width: 84px;
-      height: 40px;
+      padding: 8.7px 10.564px 10.677px 11px;
     }
   }

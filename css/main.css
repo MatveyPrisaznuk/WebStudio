@@ -71,8 +71,8 @@ body {
 }
 
 .header {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -386,8 +386,14 @@ body {
 }
 
 .work {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .work__list {
   display: flex;
@@ -547,17 +553,34 @@ body {
 
 .ourteam {
   background-color: #F5F4FA;
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .ourteam {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 .ourteam__title {
   color: #212121;
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 1.166666667;
-  letter-spacing: 1.08px;
+  line-height: 1.178571429;
+  letter-spacing: 0.84px;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .ourteam__title {
+    color: #212121;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.166666667;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+  }
 }
 .ourteam__list {
   display: flex;
@@ -573,7 +596,17 @@ body {
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
 .ourteam__img {
-  width: 270px;
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .ourteam__img {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ourteam__img {
+    width: 270px;
+  }
 }
 .ourteam__box {
   padding-top: 30px;
@@ -631,18 +664,36 @@ body {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .clients__title {
   color: #212121;
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
+  line-height: 1.178571429;
+  letter-spacing: 0.84px;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    color: #212121;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.166666667;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+  }
 }
 .clients__schedule {
   display: flex;
@@ -654,12 +705,26 @@ body {
 }
 .clients .schedule__link {
   display: block;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border-radius: 4px;
   outline: 1px solid #AFB1B8;
-  padding: 16px 32px 16px 32px;
+  padding: 16px 52px;
   transition-property: outline;
+}
+@media screen and (min-width: 768px) {
+  .clients .schedule__link {
+    width: 226px;
+    height: 92px;
+    padding: 16px 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients .schedule__link {
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+  }
 }
 .clients .schedule__image {
   width: 106px;
@@ -674,12 +739,8 @@ body {
 .clients .schedule__link:hover .schedule__image, .clients .schedule__link:focus .schedule__image {
   fill: #2196F3;
 }
-.clients .other__size {
-  padding: 24.7px 42.56px 26.68px 43px;
-}
 .clients .fooster__peters {
-  width: 84px;
-  height: 40px;
+  padding: 8.7px 10.564px 10.677px 11px;
 }
 
 .footer {
