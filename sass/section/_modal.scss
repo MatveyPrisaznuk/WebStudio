@@ -21,7 +21,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    width: 528px;
+    width: 450px;
     border-radius: 4px;
     background: $main-color;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
@@ -30,6 +30,10 @@
     // transition-duration: 250ms;
     // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     @extend %transition;
+
+    @media screen and (min-width: 1200px) {
+      width: 528px;
+    }
   
     &__buttonclose {
       width: 30px;
@@ -69,8 +73,13 @@
       font-size: 20px;
       font-style: normal;
       font-weight: 700;
-      line-height: normal;
+      line-height: 1.5;
       letter-spacing: 0.6px;
+ 
+
+      @media screen and (min-width: 1200px) {
+        line-height: 1.15;
+      }
     }
 
     .register {
@@ -98,13 +107,19 @@
         margin-top: 4px;
         border-radius: 4px;
         border: 1px solid rgba(33, 33, 33, 0.20);
-        width: 406px;
+        width: 328px;
         height: 40px;
         padding-left: 42px;
         transition-property: border;
         // transition-duration: 250ms;
         // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         @extend %transition;
+
+        @media screen and (min-width: 1200px) {
+          width: 406px;
+          height: 40px;
+          padding-left: 42px;
+        }
       
         &:hover,
         &:focus {
@@ -157,16 +172,26 @@
         width: 415px;
         height: 96px;
         color: rgba(117, 117, 117, 0.50);
-        font-size: 12px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 400;
-        line-height: normal;
-        letter-spacing: 0.12px;
+        width: 338px;
+        height: 96px;
+        line-height: 1.142857143;
+        letter-spacing: 0.14px;
         padding: 12px 16px 12px 16px;
         transition-property: border;
         // transition-duration: 250ms;
         // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         @extend %transition;
+
+        @media screen and (min-width: 1200px) {
+          font-size: 12px;
+          line-height: 1.166666667;
+          letter-spacing: 0.12px;
+          width: 415px;
+          height: 96px;
+        }
       
         &:hover,
         &:focus {
@@ -189,6 +214,11 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+        @extend %transition;
+
+        &:hover {
+          background: #188CE8;
+        }
       }
     }
 
@@ -204,26 +234,50 @@
 
       &__text {
         color: $additional-color;
-        font-size: 14px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
-        line-height: 1.714285714;
-        letter-spacing: 0.42px;
+        line-height: 1.166666667;
+        letter-spacing: 0.36px;
+
+        @media screen and (min-width: 1200px) {
+          color: $additional-color;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1.714285714;
+          letter-spacing: 0.42px;
+        }
       }
 
       &__link {
         color: $akcent-color;
-        font-size: 14px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0.42px;
+        line-height: 1.166666667;
+        letter-spacing: 0.36px;
         text-decoration-line: underline;
         text-decoration-style: solid;
         text-decoration-skip-ink: none;
         text-decoration-thickness: auto;
         text-underline-offset: auto;
         text-underline-position: from-font;
+
+        @media screen and (min-width: 1200px) {
+          color: $akcent-color;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.42px;
+          text-decoration-line: underline;
+          text-decoration-style: solid;
+          text-decoration-skip-ink: none;
+          text-decoration-thickness: auto;
+          text-underline-offset: auto;
+          text-underline-position: from-font;
+        }
       }
     }
   }

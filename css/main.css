@@ -65,7 +65,7 @@ body {
   font-family: "Roboto";
 }
 
-.modal .pattern__entry, .modal .register__icon, .modal .register__entry, .modal .buttonclose__icon, .modal, .portfolio .mainlist__subject, .portfolio .mainlist__item, .portfolio__button, .nav__portfolio, .nav__studiolink, .footer .checklist__link, .clients .schedule__image, .clients .schedule__link, .ourteam .roster__image, .ourteam .roster__link, .header__icon, .header__link, .header .nav__portfoliolink, .header .nav__studio {
+.modal .pattern__submit, .modal .pattern__entry, .modal .register__icon, .modal .register__entry, .modal .buttonclose__icon, .modal, .portfolio .mainlist__subject, .portfolio .mainlist__item, .portfolio__button, .nav__portfolio, .nav__studiolink, .footer .checklist__link, .clients .schedule__image, .clients .schedule__link, .ourteam .roster__image, .ourteam .roster__link, .header__icon, .header__link, .header .nav__portfoliolink, .header .nav__studio {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1087,12 +1087,17 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
-  width: 528px;
+  width: 450px;
   border-radius: 4px;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   padding: 40px;
   transition-property: transform;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 .modal__buttonclose {
   width: 30px;
@@ -1123,8 +1128,13 @@ body {
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 1.5;
   letter-spacing: 0.6px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
 }
 .modal .register__item:first-child {
   margin-top: 12px;
@@ -1145,10 +1155,17 @@ body {
   margin-top: 4px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  width: 406px;
+  width: 328px;
   height: 40px;
   padding-left: 42px;
   transition-property: border;
+}
+@media screen and (min-width: 1200px) {
+  .modal .register__entry {
+    width: 406px;
+    height: 40px;
+    padding-left: 42px;
+  }
 }
 .modal .register__entry:hover, .modal .register__entry:focus {
   border: 1px solid #2196F3;
@@ -1190,13 +1207,24 @@ body {
   width: 415px;
   height: 96px;
   color: rgba(117, 117, 117, 0.5);
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.12px;
+  width: 338px;
+  height: 96px;
+  line-height: 1.142857143;
+  letter-spacing: 0.14px;
   padding: 12px 16px 12px 16px;
   transition-property: border;
+}
+@media screen and (min-width: 1200px) {
+  .modal .pattern__entry {
+    font-size: 12px;
+    line-height: 1.166666667;
+    letter-spacing: 0.12px;
+    width: 415px;
+    height: 96px;
+  }
 }
 .modal .pattern__entry:hover, .modal .pattern__entry:focus {
   border: 1px solid #2196F3;
@@ -1217,6 +1245,9 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.modal .pattern__submit:hover {
+  background: #188CE8;
+}
 .modal .descterms {
   margin-top: 20px;
   display: flex;
@@ -1231,19 +1262,29 @@ body {
 }
 .modal .descterms__text {
   color: #757575;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.714285714;
-  letter-spacing: 0.42px;
+  line-height: 1.166666667;
+  letter-spacing: 0.36px;
+}
+@media screen and (min-width: 1200px) {
+  .modal .descterms__text {
+    color: #757575;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.714285714;
+    letter-spacing: 0.42px;
+  }
 }
 .modal .descterms__link {
   color: #2196F3;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
+  line-height: 1.166666667;
+  letter-spacing: 0.36px;
   text-decoration-line: underline;
   text-decoration-style: solid;
   -webkit-text-decoration-skip-ink: none;
@@ -1251,4 +1292,21 @@ body {
   text-decoration-thickness: auto;
   text-underline-offset: auto;
   text-underline-position: from-font;
+}
+@media screen and (min-width: 1200px) {
+  .modal .descterms__link {
+    color: #2196F3;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+  }
 }/*# sourceMappingURL=main.css.map */
