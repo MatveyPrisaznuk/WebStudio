@@ -130,6 +130,7 @@
 
       @media screen and (min-width: 768px) {
         margin-top: 30px;
+        justify-content: flex-start;
       }
 
       @media screen and (min-width: 1200px) {
@@ -176,23 +177,34 @@
       &__subject {
         position: absolute;
         top: 0;
-        width: 322px;
         color: $main-color;
+        width: 450px;
+        height: 394px;
+        padding: 110px 24px 187px 24px;
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
         line-height: 1.555555556;
         letter-spacing: 0.54px;
         background: rgba(33, 150, 243, 0.90);
-        padding: 63px 24px;
-        width: 370px;
-        height: 294px;
         visibility: hidden;
         transform: translateY(100%);
         transition-property: transform, visibility;
         // transition-duration: 250ms;
         // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         @extend %transition;
+
+        @media screen and (min-width: 768px) {
+          width: 354px;
+          height: 294px;
+          padding: 49px 24px 77px 24px;
+        }
+
+        @media screen and (min-width: 1200px) {
+          padding: 63px 24px;
+          width: 370px;
+          height: 294px;
+        }
       }
 
       &__box {
