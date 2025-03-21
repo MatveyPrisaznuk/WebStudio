@@ -65,16 +65,25 @@
 
   .portfolio {
     background: $main-color;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     text-align: left;
     border-top: 1px solid $line-color;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
 
     &__buttonbox {
       // justify-content: center;
       // display: flex;
       // gap: 8px;
-      @include flexbox($gap: 8px);
+      @include flexbox($gap: 8px, $justify: flex-start);
+
+      @media screen and (min-width: 768px) {
+        @include flexbox($gap: 8px);
+      }
     }
 
     &__button {
@@ -93,6 +102,16 @@
       // transition-duration: 250ms;
       // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       @extend %transition;
+
+      &:nth-child(3) {
+        margin-right: 20px;
+      }
+
+      @media screen and (min-width: 768px) {
+        &:nth-child(3) {
+          margin-right: 0px;
+        }
+      }
     
       &:hover,
       &:focus {
@@ -107,13 +126,29 @@
       // flex-wrap: wrap;
       // gap: 30px;
       @include flexbox($gap: 30px);
-      margin-top: 50px;
-      
+      margin-top: 40px;
+
+      @media screen and (min-width: 768px) {
+        margin-top: 30px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        margin-top: 50px;
+      }
     }
 
     .mainlist {
       &__item {
-        flex-basis: calc((100% - 60px) /3);
+        flex-basis: calc((100%) /1);
+
+        @media screen and (min-width: 768px) {
+          flex-basis: calc((100% - 30px) /2);
+        }
+  
+        @media screen and (min-width: 1200px) {
+          flex-basis: calc((100% - 60px) /3);
+        }
+
         position: relative;
         transition-property: box-shadow,visibility,transform;
         // transition-duration: 250ms;
@@ -187,5 +222,20 @@
         letter-spacing: 0.48px;
         margin-top: 4px;
       }
+
+     
     }
+
+    .size {
+      padding-bottom: 0px;
+
+      @media screen and (min-width: 768px) {
+        padding-bottom: 36px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        padding-bottom: 0px;
+      }
+    }
+
   }
