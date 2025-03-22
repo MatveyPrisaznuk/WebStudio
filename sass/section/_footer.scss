@@ -7,29 +7,70 @@
       // display: flex;
       // align-items: baseline;
       // justify-content: space-between;
-      @include flexbox($align: baseline, $justify: space-between);
+      text-align: center;
+      @include flexbox($direction: column);
+
+      @media screen and (min-width: 768px) {
+        @include flexbox($align: baseline, $justify: space-between);
+        text-align: center;
+      }
+
+      @media screen and (min-width: 1200px) {
+        @include flexbox($align: baseline, $justify: space-between);
+        text-align: left;
+      }
     }
 
     &__adressbox {
-      margin-right: 70px;
+      margin-right: 0px;
+      margin-bottom: 60px;
+
+
+      @media screen and (min-width: 768px) {
+        margin-right: 0px;
+        margin-bottom: 0px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+        margin-bottom: 0px;
+      }
     }
 
     &__logo {
       color: $akcent-color;
       font-family: Raleway;
-      font-size: 26px;
+      font-size: 24px;
       font-weight: 700;
-      line-height: 1.384615385;
-      letter-spacing: 0.78px;
+      line-height: 1.375;
+      letter-spacing: 0.72px;
+
+      @media screen and (min-width: 1200px) {
+        color: $akcent-color;
+        font-family: Raleway;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.384615385;
+        letter-spacing: 0.78px;
+      }
     }
 
     &__span {
       color: $main-color;
       font-family: Raleway;
-      font-size: 26px;
+      font-size: 24px;
       font-weight: 700;
-      line-height: 1.384615385;
-      letter-spacing: 0.78px;
+      line-height: 1.375;
+      letter-spacing: 0.72px;
+
+      @media screen and (min-width: 1200px) {
+        color: $main-color;
+        font-family: Raleway;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.384615385;
+        letter-spacing: 0.78px;
+      }
     }
 
     &__adress {
@@ -76,7 +117,17 @@
     }
 
     &__linkbox {
-      margin-right: 93px;
+      margin-right: 0px;
+      margin-bottom: 60px;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 0px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+        margin-bottom: 0px;
+      }
     }
 
     .linkbox {
@@ -125,6 +176,18 @@
       }
     }
 
+    &__forms {
+      margin-left: 0px;
+
+      @media screen and (min-width: 768px) {
+        margin-left: 146px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        margin-left: 0px;
+      }
+    }
+
     .forms {
       &__title {
         color: $main-color;
@@ -141,6 +204,14 @@
         // display: flex;
         // gap: 12px;
         @include flexbox($gap: 12px);
+
+        @media screen and (min-width: 768px) {
+          @include flexbox($gap: 12px, $direction: column);
+        }
+
+        @media screen and (min-width: 1200px) {
+          @include flexbox($gap: 12px);
+        }
       }
     }
 
@@ -156,11 +227,15 @@
         padding-top: 15px;
         padding-bottom: 15px;
         padding-left: 16px;
-        padding-right: 295px;
+        padding-right: 387px;
         border-radius: 4px;
         border: 1px solid rgba(255, 255, 255, 0.30);
         background: rgba(33, 150, 243, 0.00);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+        @media screen and (min-width: 1200px) {
+          padding-right: 295px;
+        }
       }
 
       &__submit {
