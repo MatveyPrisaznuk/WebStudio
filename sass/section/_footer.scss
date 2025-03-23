@@ -11,13 +11,35 @@
       @include flexbox($direction: column);
 
       @media screen and (min-width: 768px) {
-        @include flexbox($align: baseline, $justify: space-between);
+        @include flexbox($align: baseline);
         text-align: center;
       }
 
       @media screen and (min-width: 1200px) {
         @include flexbox($align: baseline, $justify: space-between);
         text-align: left;
+      }
+    }
+
+    &__informationbox {
+      display: block;
+      gap: 0px;
+      justify-content: normal;
+      align-items: normal;
+
+      @media screen and (min-width: 768px) {
+        display: flex;
+        gap: 165px;
+        justify-content: center;
+        text-align: center;
+        align-items: baseline;
+      }
+
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        gap: 0px;
+        justify-content: normal;
+        align-items: normal;
       }
     }
 
@@ -177,14 +199,14 @@
     }
 
     &__forms {
-      margin-left: 0px;
+      margin-top: 0px;
 
       @media screen and (min-width: 768px) {
-        margin-left: 146px;
+        margin-top: 60px;
       }
 
       @media screen and (min-width: 1200px) {
-        margin-left: 0px;
+        margin-top: 0px;
       }
     }
 
