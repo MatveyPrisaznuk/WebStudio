@@ -724,12 +724,19 @@ body {
 }
 .clients .schedule__link {
   display: block;
-  width: 210px;
-  height: 92px;
+  width: 130px;
+  height: 82px;
   border-radius: 4px;
   outline: 1px solid #AFB1B8;
-  padding: 16px 52px;
+  padding: 10px 10px;
   transition-property: outline;
+}
+@media screen and (min-width: 480px) {
+  .clients .schedule__link {
+    width: 210px;
+    height: 92px;
+    padding: 16px 52px;
+  }
 }
 @media screen and (min-width: 768px) {
   .clients .schedule__link {
