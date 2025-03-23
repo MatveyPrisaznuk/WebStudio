@@ -19,12 +19,12 @@
     }
 
     &__menubox {
-      @include flexbox($direction: row, $gap: 276px, $wrap: nowrap)
+      @include flexbox($direction: row, $gap: 276px, $wrap: nowrap);
     }
 
     @media screen and (min-width: 768px) {
       .header__menubox {
-        @include flexbox()
+        @include flexbox();
       }
     }
 
@@ -168,11 +168,11 @@
       margin-left: auto;
 
       @media screen and (min-width: 768px) {
-       @include flexbox($direction: column, $gap: 10px)
+       @include flexbox($direction: column, $gap: 10px);
       }
 
       @media screen and (min-width: 1200px) {
-        @include flexbox($direction: row, $gap: 30px)
+        @include flexbox($direction: row, $gap: 30px);
       }
     }
 
