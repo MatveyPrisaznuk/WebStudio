@@ -81,8 +81,13 @@
       // gap: 8px;
       @include flexbox($gap: 8px, $justify: flex-start);
 
+      @media screen and (min-width: 351px) {
+        width: 326px;
+      }
+
       @media screen and (min-width: 768px) {
         @include flexbox($gap: 8px);
+        width: auto;
       }
     }
 
@@ -102,16 +107,6 @@
       // transition-duration: 250ms;
       // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       @extend %transition;
-
-      &:nth-child(3) {
-        margin-right: 20px;
-      }
-
-      @media screen and (min-width: 768px) {
-        &:nth-child(3) {
-          margin-right: 0px;
-        }
-      }
     
       &:hover,
       &:focus {
