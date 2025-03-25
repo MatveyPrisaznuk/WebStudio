@@ -365,8 +365,14 @@ body {
   margin-right: auto;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__title {
+    width: 696px;
     color: #FFFFFF;
     text-align: center;
     font-size: 44px;
@@ -700,7 +706,7 @@ body {
   font-weight: 700;
   line-height: 1.178571429;
   letter-spacing: 0.84px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .clients__title {
@@ -826,6 +832,7 @@ body {
     gap: 0px;
     justify-content: normal;
     align-items: baseline;
+    text-align: left;
   }
 }
 .footer__adressbox {
