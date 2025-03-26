@@ -20,6 +20,7 @@
 
     &__menubox {
       @include flexbox($direction: row, $gap: 130px, $wrap: nowrap);
+      width: 100%;
     }
 
     @media screen and (min-width: 480px) {
@@ -31,6 +32,7 @@
     @media screen and (min-width: 768px) {
       .header__menubox {
         @include flexbox();
+        width: auto;
       }
     }
 
@@ -41,9 +43,11 @@
       font-weight: 700;
       line-height: 1.375;
       letter-spacing: 0.72px;
+      width: 100%;
 
       @media screen and (min-width: 768px) {
         margin-right: 93px;
+        width: auto;
       }
   
       @media screen and (min-width: 1200px) {

@@ -101,6 +101,7 @@ body {
   flex-wrap: nowrap;
   flex-direction: row;
   gap: 130px;
+  width: 100%;
 }
 @media screen and (min-width: 480px) {
   .header .header__menubox {
@@ -120,6 +121,7 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 0px;
+    width: auto;
   }
 }
 .header__logo {
@@ -129,10 +131,12 @@ body {
   font-weight: 700;
   line-height: 1.375;
   letter-spacing: 0.72px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .header__logo {
     margin-right: 93px;
+    width: auto;
   }
 }
 @media screen and (min-width: 1200px) {
