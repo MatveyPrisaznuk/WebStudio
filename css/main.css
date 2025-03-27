@@ -1152,6 +1152,7 @@ body {
 @media screen and (min-width: 351px) {
   .portfolio__buttonbox {
     width: 326px;
+    row-gap: 15px;
   }
 }
 @media screen and (min-width: 768px) {
