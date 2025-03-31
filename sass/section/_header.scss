@@ -296,35 +296,37 @@
       @extend %transition;
     }
 
-    &__itemlink {
-      width: 139px;
-      height: 48.286px;
-    }
-
-    
-    &__itemlink:nth-child(2) {
-      margin-top: 35.71px;
-      width: 219px;
-      height: 48px;
-    }
-
-    &__itemlink:last-child {
-      margin-top: 32px;
-      width: 192px;
-      height: 48px;
-    }
-
-    &__link {
-      color: $text-color;
-      font-size: 40px;
-      font-weight: 500;
-      line-height: 1.175;
-      letter-spacing: 0.8px;
-      @extend %transition;
-      transition-property: color;
-
-      &:hover {
-        color: $akcent-color;
+    .bill {
+      &__item {
+        width: 139px;
+        height: 48.286px;
+      }
+  
+      
+      &__item:nth-child(2) {
+        margin-top: 35.71px;
+        width: 219px;
+        height: 48px;
+      }
+  
+      &__item:last-child {
+        margin-top: 32px;
+        width: 192px;
+        height: 48px;
+      }
+  
+      &__link {
+        color: $text-color;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 1.175;
+        letter-spacing: 0.8px;
+        @extend %transition;
+        transition-property: color;
+  
+        &:hover {
+          color: $akcent-color;
+        }
       }
     }
 
@@ -340,19 +342,43 @@
       gap: 32px;
     }
 
-    &__dockettel {
-      color: $akcent-color;
-      font-size: 34px;
-      font-weight: 500;
-      line-height: 1.176470588;
-      letter-spacing: 0.68px;
+    .docket {
+      &__tel {
+        color: $akcent-color;
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 1.176470588;
+        letter-spacing: 0.68px;
+      }
+  
+      &__email {
+        color: $additional-color;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.166666667;
+        letter-spacing: 0.48px;
+      }
     }
 
-    &__docketemail {
-      color: $additional-color;
-      font-size: 24px;
-      font-weight: 500;
-      line-height: 1.166666667;
-      letter-spacing: 0.48px;
+    &__catalogue {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .catalogue {
+      &__link {
+        color: $akcent-color;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.222222222; 
+        letter-spacing: 0.36px;
+        padding-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.20);
+      }
+    }
+
+    .bordernone {
+      border-right: none;
     }
   }
