@@ -1516,14 +1516,14 @@ body {
   margin-top: 4px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  width: 328px;
+  width: 326px;
   height: 40px;
   padding-left: 42px;
   transition-property: border;
 }
 @media screen and (min-width: 1200px) {
   .modal .register__entry {
-    width: 406px;
+    width: 404px;
     height: 40px;
     padding-left: 42px;
   }
@@ -1565,13 +1565,11 @@ body {
   margin-top: 4px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  width: 415px;
-  height: 96px;
   color: rgba(117, 117, 117, 0.5);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  width: 338px;
+  width: 336px;
   height: 96px;
   line-height: 1.142857143;
   letter-spacing: 0.14px;
