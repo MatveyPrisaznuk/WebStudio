@@ -1516,16 +1516,14 @@ body {
   margin-top: 4px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  width: 326px;
+  width: 370px;
   height: 40px;
-  padding-left: 42px;
   transition-property: border;
 }
 @media screen and (min-width: 1200px) {
   .modal .register__entry {
-    width: 404px;
+    width: 448px;
     height: 40px;
-    padding-left: 42px;
   }
 }
 .modal .register__entry:hover, .modal .register__entry:focus {
@@ -1540,8 +1538,6 @@ body {
   position: absolute;
   top: 32px;
   left: 11px;
-  right: 458px;
-  bottom: 11px;
   transition-property: fill;
 }
 .modal .pattern__register {

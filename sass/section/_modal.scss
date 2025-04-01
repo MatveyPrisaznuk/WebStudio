@@ -111,18 +111,18 @@
         margin-top: 4px;
         border-radius: 4px;
         border: 1px solid rgba(33, 33, 33, 0.20);
-        width: 326px;
+        width: 370px;
         height: 40px;
-        padding-left: 42px;
+    
         transition-property: border;
         // transition-duration: 250ms;
         // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         @extend %transition;
 
         @media screen and (min-width: 1200px) {
-          width: 404px;
+          width: 448px;
           height: 40px;
-          padding-left: 42px;
+
         }
       
         &:hover,
@@ -142,8 +142,6 @@
         position: absolute;
         top: 32px;
         left: 11px;
-        right: 458px;
-        bottom: 11px;
         transition-property: fill;
         // transition-duration: 250ms;
         // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
