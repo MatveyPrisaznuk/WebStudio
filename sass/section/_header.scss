@@ -113,11 +113,11 @@
 
         &:hover,
         &:focus {
-        color: $akcent-color;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 1.142857143;
-        letter-spacing: 0.28px;
+          color: $akcent-color;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1.142857143;
+          letter-spacing: 0.28px;
         }
 
         &::after {
@@ -130,7 +130,6 @@
           border-radius: 2px;
           background: $akcent-color;
         }
-
       }
 
       &__portfoliolink {
